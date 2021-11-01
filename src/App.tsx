@@ -3,7 +3,7 @@ import { Container, makeStyles, Typography } from "@material-ui/core";
 import AddTodoForm from "./AddTodo";
 import { TodoList } from "./TodoList";
 
-export const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   headerTextStyles: {
     textAlign: "center",
     marginBottom: theme.spacing(3),
@@ -11,7 +11,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function App() {
+function App(): JSX.Element {
   const { headerTextStyles } = useStyles();
 
   return (

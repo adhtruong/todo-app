@@ -13,7 +13,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 import { useTodoStore } from "./useTodoStore";
 
-export const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   marginAutoItem: {
     margin: "auto",
     textAlign: "center",
@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const TodoList = () => {
+export const TodoList = (): JSX.Element => {
   const { completedTodoStyles, marginAutoItem } = useStyles();
   const { removeTodo, toggleCompletedState, todos } = useTodoStore();
 

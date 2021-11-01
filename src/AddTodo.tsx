@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const AddTodoForm = () => {
+const AddTodoForm = (): JSX.Element => {
   const { inputBaseStyles, paperStyles, iconButtonStyles, dividerIconStyles } =
     useStyles();
 
