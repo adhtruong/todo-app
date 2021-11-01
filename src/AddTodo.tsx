@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import {
   Divider,
   IconButton,
@@ -6,7 +8,7 @@ import {
   Paper,
 } from "@material-ui/core";
 import { AddCircleRounded } from "@material-ui/icons";
-import { useState } from "react";
+
 import { useTodoStore } from "./useTodoStore";
 
 const useStyles = makeStyles((theme) => ({

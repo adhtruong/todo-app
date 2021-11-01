@@ -10,6 +10,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
+
 import { useTodoStore } from "./useTodoStore";
 
 export const useStyles = makeStyles((theme) => ({

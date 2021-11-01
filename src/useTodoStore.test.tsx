@@ -1,5 +1,6 @@
-import { act, renderHook } from "@testing-library/react-hooks";
 import { cleanup } from "@testing-library/react";
+import { act, renderHook } from "@testing-library/react-hooks";
+
 import { useTodoStore } from "./useTodoStore";
 
 const initialStoreState = useTodoStore.getState();
