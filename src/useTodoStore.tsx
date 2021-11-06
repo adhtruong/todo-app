@@ -29,14 +29,14 @@ export const useTodoStore = create<TodoState>((set) => ({
   toggleCompletedState: (todoId) =>
     set((state) => ({
       todos: state.todos.map((todo) => {
-        if (todo.id === todoId) {
-          return {
-            ...todo,
-            isCompleted: !todo.isCompleted,
-          };
+        if (todo.id !== todoId) {
+          return todo;
         }
 
-        return todo;
+        return {
+          ...todo,
+          isCompleted: !todo.isCompleted,
+        };
       }),
     })),
 }));
